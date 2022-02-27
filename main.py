@@ -141,25 +141,24 @@
 #for i in "jacob":
     #print(i)
 
-import time
+#import time
 
-def countdown(t):
+#def countdown(t):
     
-    for seconds in range(t,0,-1):
-        print(seconds)
-        time.sleep(1)
+    #for seconds in range(t,0,-1):
+        #print(seconds)
+        #time.sleep(1)
         
-    print('happy new year!') 
+    #print('happy new year!') 
 
 # for seconds in range(10,0,-1):
 #     print(seconds)
 #     time.sleep(1)
 # print('happy new year!')
 
-if __name__ == '__main__':
-    t = int(input("Enter Countdown Lenght:"))
-    countdown(t)
 
+
+print("hi")
 
 
 
