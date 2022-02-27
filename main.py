@@ -156,18 +156,39 @@
 #     time.sleep(1)
 # print('happy new year!')
 
+
+    
+import turtle
+  
+t = turtle.Turtle()
+ 
+s = int(input("Enter the length of the side of the Square: "))
+ 
+# drawing first side
+t.forward(s) # Forward turtle by s units
+t.left(90) # Turn turtle by 90 degree
+ 
+# drawing second side
+t.forward(s) # Forward turtle by s units
+t.left(90) # Turn turtle by 90 degree
+ 
+# drawing third side
+t.forward(s) # Forward turtle by s units
+t.left(90) # Turn turtle by 90 degree
+ 
+# drawing fourth side
+t.forward(s) # Forward turtle by s units
+t.left(90) # Turn turtle by 90 degree
+
+
+
+
+
+
+
 import time
 
 for seconds in range (10,0,-1):
     print(seconds)
     time.sleep(1)
 print("Happy new year!")
-
-    
-
-
-
-
-
-
-
