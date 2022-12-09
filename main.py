@@ -78,10 +78,10 @@
 
 #name = "Jacob Charbonneau"
 
-#first_name = name[:5]
-#last_name = name[5:17]
-#funky_name = name[::3]
-#reversed_name = name[::-1]
+#first_name = name[:4] #pc thinks theres already a zero
+#last_name = name[5:17] 
+#funky_name = name[::3] #step
+#reversed_name = name[::-1] #backwards
 
 #print(reversed_name)
 
@@ -89,14 +89,14 @@
 #website2 = "httpe://wikipedia.com"
 
 
-#slice = slice(7,-4)
+#slice = slice(7,-4) #same thing just with a coma
 
 #print(website[slice])
 
 #age = int(input("how old are you?: "))
 
 #if age == 100:
-    #print("You are old!")
+    #print("You are old!") #only executes if its true if not it skips to the next one
 #elif age >= 18:
     #print("you are an adult!")
 #elif age < 0:
@@ -111,7 +111,10 @@
 
 #if not(temp >= 0 and temp <= 30):
     #print(' Today is not your birthday ')
-
+    #print('be sad')
+#elif temp < 0 or temp > 30:
+    #print('the temperature is bad today!')
+    #print('stay inside!')
 
 # while loop = a statement that will execute its block of code,
 #              as long as its condition remains true
@@ -132,63 +135,30 @@
 #            for loop = limited
 
 
-#for i  in range(10):
+#for i  in range(10):       #i fro index
     #print(i+1)
 
-#for i in range (50,100+1,5):
+#for i in range (50,100+1,5):    #(using slicing)
     #print(i)
 
 #for i in "jacob":
     #print(i)
 
 #import time
-
-#def countdown(t):
     
-    #for seconds in range(t,0,-1):
-        #print(seconds)
-        #time.sleep(1)
-        
-    #print('happy new year!') 
+#for seconds in range(10,0,-1):
+    #print(seconds)
+    #time.sleep(1)
+#print('happy new year!') 
 
-# for seconds in range(10,0,-1):
-#     print(seconds)
-#     time.sleep(1)
-# print('happy new year!')
+# nested loops =  the "inner loop" will finish all of its iterations before 
+#                 finishing one interation of the "outer loop"
 
+rows = int(input("How many rows?: "))
+columns = int(input("how many columns?: "))
+symbol = input("enter a symbol to use: ")
 
-    
-import turtle
-  
-t = turtle.Turtle()
- 
-s = int(input("Enter the length of the side of the Square: "))
- 
-# drawing first side
-t.forward(s) # Forward turtle by s units
-t.left(90) # Turn turtle by 90 degree
- 
-# drawing second side
-t.forward(s) # Forward turtle by s units
-t.left(90) # Turn turtle by 90 degree
- 
-# drawing third side
-t.forward(s) # Forward turtle by s units
-t.left(90) # Turn turtle by 90 degree
- 
-# drawing fourth side
-t.forward(s) # Forward turtle by s units
-t.left(90) # Turn turtle by 90 degree
-
-
-
-
-
-
-
-import time
-
-for seconds in range (10,0,-1):
-    print(seconds)
-    time.sleep(1)
-print("Happy new year!")
+for i in range(rows):
+    for j in range(columns):
+        print(symbol, end="")
+    print()
