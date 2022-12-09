@@ -162,3 +162,23 @@ for i in range(rows):
     for j in range(columns):
         print(symbol, end="")
     print()
+
+# ============== Improvements ==============
+# Replace "i" and "j" with underscores when a variable isn't used. e.g. for _ in range(): ...
+for _ in range(rows):
+    for _ in range(columns):
+        print(symbol, end="")
+    print()
+
+# Instead of adding end="", build a list first that contains the content of the row you want to print
+# then convert the list into a string, by combining (joining elements) of that list with an empty string
+for _ in range(rows):
+    my_row_items = []
+    for _ in range(columns):
+        my_row_items.append(symbol)
+    my_row_items_as_a_string = "".join(my_row_items)
+    print(my_row_items_as_a_string)
+    
+# (more advanced) Do all of the above + use a list comprehension when you can for speedups in computation
+for _ in range(rows):
+    print("".join([symbol for _ in range(columns)]))
