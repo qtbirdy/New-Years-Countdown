@@ -154,31 +154,140 @@
 # nested loops =  the "inner loop" will finish all of its iterations before 
 #                 finishing one interation of the "outer loop"
 
-rows = int(input("How many rows?: "))
-columns = int(input("how many columns?: "))
-symbol = input("enter a symbol to use: ")
+#rows = int(input("How many rows?: "))
+#columns = int(input("how many columns?: "))
+#symbol = input("enter a symbol to use: ")
 
-for i in range(rows):
-    for j in range(columns):
-        print(symbol, end="")
-    print()
+#for i in range(rows):
+  #  for j in range(columns):
+   #     print(symbol, end="")
+  #  print()
 
 # ============== Improvements ==============
 # Replace "i" and "j" with underscores when a variable isn't used. e.g. for _ in range(): ...
-for _ in range(rows):
-    for _ in range(columns):
-        print(symbol, end="")
-    print()
+#for _ in range(rows):
+    #for _ in range(columns):
+        #print(symbol, end="")
+   # print()
 
 # Instead of adding end="", build a list first that contains the content of the row you want to print
 # then convert the list into a string, by combining (joining elements) of that list with an empty string
-for _ in range(rows):
-    my_row_items = []
-    for _ in range(columns):
-        my_row_items.append(symbol)
-    my_row_items_as_a_string = "".join(my_row_items)
-    print(my_row_items_as_a_string)
+#for _ in range(rows):
+    #my_row_items = []
+    #for _ in range(columns):
+  #      my_row_items.append(symbol)
+   # my_row_items_as_a_string = "".join(my_row_items)
+   # print(my_row_items_as_a_string)
     
 # (more advanced) Do all of the above + use a list comprehension when you can for speedups in computation
-for _ in range(rows):
-    print("".join([symbol for _ in range(columns)]))
+#for _ in range(rows):
+    #print("".join([symbol for _ in range(columns)]))
+
+
+
+
+# Loop Control Statement = change a loops execution from its normal sequence
+
+# break =         used to termiante the loop entirely
+# continue =      skips to the next iteration of the loop.
+# pass =          does nothing, acts as a placeholder
+
+#while True:            #<break> exemple
+   #name = input("enter your name: ")
+   # if name != "":
+  #      break
+
+#phone_number = "123-613-7890"   #exemple of <continue>
+
+#for i in phone_number:
+    #if i == "-":
+  #      continue
+ #   print(i, end="")
+
+
+#for i in range(1,21):        #exemple of <pass>
+    
+   # if i == 13:
+  #      pass
+  #  else:
+   #     print()
+
+
+
+#list = used to store multiple items in a single variable 
+
+#food = ["pizza","pasta","fries","ice cream"]
+
+#food[0] = "sushi"
+
+#food.append("carrots")   #ect of fonctions
+#food.remove("pasta")
+
+#print(food[0])
+
+#for x in food:
+#    print(x)
+
+
+#food = ["pizza","pasta","fries","ice cream"]
+
+#for x in food:
+ #   print(x)
+
+# menu = int(input("What would u like 0,1,2,3?: "))
+
+#if menu == 0:
+#    print("voila: 🍕")         # Program i did for fun XD
+#elif menu == 1:
+ #   print("voila: 🍝")
+#elif menu == 2:
+#    print("volia: 🍟")
+#elif menu == 3:
+ #   print("volia: 🍦")
+#else:
+#    print("Not in the menu yet sorry:(")
+
+
+
+# 2D lists = a list of lists
+
+#drinks = ["coffee","soda","tea"]
+#dinner = ["pizza","hamburger","hotdog"]
+#dessert = ["cake","ice cream"]
+
+#food = [drinks,dinner,dessert]
+
+#print (food[1][2])
+
+
+#tuple = colletion wish is ordered and unchangeable
+#        used to group together realted data
+
+#student = ("jacob",15,"male")
+
+#print(student.count("jacob"))
+#print(student.index('male'))
+
+#for x in student:      #using for loops
+ #   print(x)
+
+#if "jacob" in student:       #using if statements
+ #   print("jacob is here!")   
+
+
+#set = colletion wich is unordered, unindexed. No duplicate values
+
+utensils = {"fork","spoon","knife"}
+dishes = {"bowl","plate","cup"}
+
+utensils.add("napkin")
+utensils.rewmove("fork")
+#utensils.clear()
+#utensils.update(dishes)
+#dinner_table = utensils.union(dishes)
+
+for x in utensils:
+    print(x)
+
+# dictionary is NEXTTT
+
